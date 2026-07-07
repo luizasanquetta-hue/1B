@@ -4,68 +4,38 @@
     <meta charset="UTF-8">
     <title>Blog dos Gansos</title>
     <style>
-        /* Define as cores e a fonte de forma simples na tela inteira */
+        /* CSS ultra simplificado */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0; /* Branco acinzentado */
+            background-color: #f0f0f0;
             color: #111111;
-            margin: 0;
             padding: 20px;
+            text-align: center; /* Centraliza tudo por padrão */
         }
 
-        /* Centraliza os textos principais */
-        h1, h2, h3, p {
-            text-align: center;
-        }
+        h1 { color: #cc5500; }
+        h2 { color: #000000; border-bottom: 2px solid #cc5500; }
 
-        h1 {
-            color: #cc5500; /* Laranja escuro */
-            margin-top: 20px;
-        }
-
-        h2 {
-            color: #000000;
-            border-bottom: 2px solid #cc5500;
-            padding-bottom: 8px;
-        }
-
-        /* Garante que a imagem fique centralizada e use bem o espaço largo */
-        .imagem-bloco {
-            text-align: center;
-            margin: 20px 0;
-        }
-        
         img {
-            max-width: 900px; /* Deixa o site mais largo */
+            max-width: 900px;
             width: 100%;
             height: auto;
-            border: 2px solid #000000;
         }
 
-        /* Lista que ocupa bastante espaço na tela, mas alinha os textos de forma organizada */
         ul {
             max-width: 900px;
             margin: 0 auto;
-            padding: 20px;
+            text-align: left; /* Mantém apenas o texto da lista alinhado à esquerda para ler melhor */
         }
 
-        li {
-            margin-bottom: 15px;
-            font-size: 1.1em;
-            text-align: left; /* O texto da lista fica melhor lido à esquerda */
-        }
+        li { margin-bottom: 15px; }
+        b { color: #b34400; }
 
-        b {
-            color: #b34400;
-        }
-
-        /* Caixa final amarela que também se estica na tela larga */
         .caixa-final {
-            background-color: #e6b800; /* Amarelo escuro */
+            background-color: #e6b800;
             padding: 20px;
             max-width: 900px;
             margin: 30px auto;
-            border: 1px solid #000000;
         }
     </style>
 </head>
@@ -74,9 +44,7 @@
     <h1>Blog sobre gansos!</h1>
     <p><i>Por: Luiza V.S</i></p>
 
-    <div class="imagem-bloco">
-        <img src="c_5.png" alt="Gansos">
-    </div>
+    <img src="c_5.png" alt="Gansos">
     
     <p>Oi! Se você veio parar aqui, é porque gosta de gansos. Veja algumas curiosidades bem legais sobre eles:</p>
     
@@ -88,6 +56,7 @@
         <li><b>Melhor que cachorro:</b> Gansos são ótimos guardas. Eles gritam muito alto se um estranho chega perto.</li>
         <li><b>Super amigos:</b> Se um ganso fica doente na viagem, outros dois descem com ele para ajudar e proteger.</li>
         <li><b>Boa memória:</b> Eles conseguem lembrar de rostos humanos por muitos anos, guardando quem foi legal ou ruim com eles.</li>
+        <li><b>Amor à primeira vista (Imprinting):</b> Assim que os filhotes saem do ovo, eles gravam na memória a primeira coisa que veem se movendo e passam a seguir aquilo achando que é a mãe deles. Se for um humano ou até um objeto, eles vão seguir do mesmo jeito!</li>
     </ul>
 
     <div class="caixa-final">
