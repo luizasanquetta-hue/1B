@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <title>Blog dos Gansos</title>
     <style>
-        /* CSS ultra simplificado */
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
             color: #111111;
             padding: 20px;
-            text-align: center; /* Centraliza tudo por padrão */
+            text-align: center;
         }
 
         h1 { color: #cc5500; }
@@ -25,11 +24,33 @@
         ul {
             max-width: 900px;
             margin: 0 auto;
-            text-align: left; /* Mantém apenas o texto da lista alinhado à esquerda para ler melhor */
+            text-align: left;
+            list-style-type: none; /* Remove as bolinhas normais da lista */
+            padding: 0;
         }
 
-        li { margin-bottom: 15px; }
+        li { 
+            margin-bottom: 25px; 
+            padding: 10px;
+            background-color: #ffffff;
+            border-left: 5px solid #cc5500;
+        }
+        
         b { color: #b34400; }
+
+        /* Estilo simples para o botão de curtir */
+        button {
+            background-color: #e6b800;
+            border: none;
+            padding: 5px 10px;
+            margin-top: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #b38f00;
+        }
 
         .caixa-final {
             background-color: #e6b800;
@@ -51,18 +72,45 @@
     <h2>Curiosidades:</h2>
     
     <ul>
-        <li><b>Namorados para sempre:</b> Eles escolhem um parceiro quando são jovens e ficam juntos a vida inteira.</li>
-        <li><b>Voo em equipe:</b> Eles voam em formato de "V" para cansar menos. O ganso da frente corta o vento e, quando cansa, vai para trás e outro assume o lugar.</li>
-        <li><b>Melhor que cachorro:</b> Gansos são ótimos guardas. Eles gritam muito alto se um estranho chega perto.</li>
-        <li><b>Super amigos:</b> Se um ganso fica doente na viagem, outros dois descem com ele para ajudar e proteger.</li>
-        <li><b>Boa memória:</b> Eles conseguem lembrar de rostos humanos por muitos anos, guardando quem foi legal ou ruim com eles.</li>
-        <li><b>Amor à primeira vista (Imprinting):</b> Assim que os filhotes saem do ovo, eles gravam na memória a primeira coisa que veem se movendo e passam a seguir aquilo achando que é a mãe deles. Se for um humano ou até um objeto, eles vão seguir do mesmo jeito!</li>
+        <li>
+            <b>Namorados para sempre:</b> Eles escolhem um parceiro quando são jovens e ficam juntos a vida inteira.
+            <br><button onclick="curtir(this)">👍 Curtir (<span>0</span>)</button>
+        </li>
+        <li>
+            <b>Voo em equipe:</b> Eles voam em formato de "V" para cansar menos. O ganso da frente corta o vento e, quando cansa, vai para trás e outro assume o lugar.
+            <br><button onclick="curtir(this)">👍 Curtir (<span>0</span>)</button>
+        </li>
+        <li>
+            <b>Melhor que cachorro:</b> Gansos são ótimos guardas. Eles gritam muito alto se um estranho chega perto.
+            <br><button onclick="curtir(this)">👍 Curtir (<span>0</span>)</button>
+        </li>
+        <li>
+            <b>Super amigos:</b> Se um ganso fica doente na viagem, outros dois descem com ele para ajudar e proteger.
+            <br><button onclick="curtir(this)">👍 Curtir (<span>0</span>)</button>
+        </li>
+        <li>
+            <b>Boa memória:</b> Eles conseguem lembrar de rostos humanos por muitos anos, guardando quem foi legal ou ruim com eles.
+            <br><button onclick="curtir(this)">👍 Curtir (<span>0</span>)</button>
+        </li>
+        <li>
+            <b>Amor à primeira vista (Imprinting):</b> Assim que os filhotes saem do ovo, eles gravam na memória a primeira coisa que veem se movendo e passam a seguir aquilo achando que é a mãe deles.
+            <br><button onclick="curtir(this)">👍 Curtir (<span>0</span>)</button>
+        </li>
     </ul>
 
     <div class="caixa-final">
         <h3>Fim do post</h3>
         <p>Os gansos são demais! Como eu sou só uma estudante fã deles, se quiser saber mais coisas científicas, vale a pena pesquisar no Google ou falar com um biólogo.</p>
     </div>
+
+    <script>
+        function curtir(botao) {
+            // Acha o <span> que está dentro do botão clicado
+            let contador = botao.querySelector('span');
+            // Pega o número atual, transforma em número e soma 1
+            contador.innerText = parseInt(contador.innerText) + 1;
+        }
+    </script>
 
 </body>
 </html>
