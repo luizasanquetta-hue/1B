@@ -46,16 +46,28 @@
             margin-right: 5px;
             cursor: pointer;
             font-weight: bold;
+            color: #ffffff;
         }
 
-        .btn-curtir { background-color: #e6b800; }
-        .btn-curtir:hover { background-color: #b38f00; }
+        /* Botão de curtir: Laranja Escuro */
+        .btn-curtir { 
+            background-color: #cc5500; 
+        }
+        .btn-curtir:hover { 
+            background-color: #b34400; 
+        }
 
-        .btn-descurtir { background-color: #dddddd; }
-        .btn-descurtir:hover { background-color: #cccccc; }
+        /* Botão de deslike: Preto */
+        .btn-descurtir { 
+            background-color: #000000; 
+        }
+        .btn-descurtir:hover { 
+            background-color: #222222; 
+        }
 
         .caixa-final {
             background-color: #e6b800;
+            color: #000000;
             padding: 20px;
             max-width: 900px;
             margin: 30px auto;
@@ -75,46 +87,46 @@
     
     <ul>
         <li>
-            <b>Namorados para sempre:</b> Eles escolhem um parceiro quando são jovens e ficam juntos a vida inteira.
+            <b>Parceiros para toda a vida:</b> Eles escolhem um parceiro quando são jovens e ficam juntos a vida inteira, entrando em luto com a perda do parceiro.
             <br>
-            <button class="btn-curtir" onclick="reagir(this)">👍 Curtir (<span>0</span>)</button>
-            <button class="btn-descurtir" onclick="reagir(this)">👎 Não curtir (<span>0</span>)</button>
+            <button class="btn-curtir" onclick="reagir(this)">👍 Like (<span>0</span>)</button>
+            <button class="btn-descurtir" onclick="reagir(this)">👎 Deslike (<span>0</span>)</button>
         </li>
         <li>
             <b>Voo em equipe:</b> Eles voam em formato de "V" para cansar menos. O ganso da frente corta o vento e, quando cansa, vai para trás e outro assume o lugar.
             <br>
-            <button class="btn-curtir" onclick="reagir(this)">👍 Curtir (<span>0</span>)</button>
-            <button class="btn-descurtir" onclick="reagir(this)">👎 Não curtir (<span>0</span>)</button>
+            <button class="btn-curtir" onclick="reagir(this)">👍 Like (<span>0</span>)</button>
+            <button class="btn-descurtir" onclick="reagir(this)">👎 Deslike (<span>0</span>)</button>
         </li>
         <li>
-            <b>Melhor que cachorro:</b> Gansos são ótimos guardas. Eles gritam muito alto se um estranho chega perto.
+            <b>Melhor que cachorro:</b> Gansos são ótimos guardas. Eles gritam muito alto se um estranho chega perto de pessoas que eles amam.
             <br>
-            <button class="btn-curtir" onclick="reagir(this)">👍 Curtir (<span>0</span>)</button>
-            <button class="btn-descurtir" onclick="reagir(this)">👎 Não curtir (<span>0</span>)</button>
+            <button class="btn-curtir" onclick="reagir(this)">👍 Like (<span>0</span>)</button>
+            <button class="btn-descurtir" onclick="reagir(this)">👎 Deslike (<span>0</span>)</button>
         </li>
         <li>
-            <b>Super amigos:</b> Se um ganso fica doente na viagem, outros dois descem com ele para ajudar e proteger.
+            <b>Melhores amigos e companheiros:</b> Se um ganso fica doente na viagem, outros dois descem com ele para ajudar e proteger.
             <br>
-            <button class="btn-curtir" onclick="reagir(this)">👍 Curtir (<span>0</span>)</button>
-            <button class="btn-descurtir" onclick="reagir(this)">👎 Não curtir (<span>0</span>)</button>
+            <button class="btn-curtir" onclick="reagir(this)">👍 Like (<span>0</span>)</button>
+            <button class="btn-descurtir" onclick="reagir(this)">👎 Deslike (<span>0</span>)</button>
         </li>
         <li>
             <b>Boa memória:</b> Eles conseguem lembrar de rostos humanos por muitos anos, guardando quem foi legal ou ruim com eles.
             <br>
-            <button class="btn-curtir" onclick="reagir(this)">👍 Curtir (<span>0</span>)</button>
-            <button class="btn-descurtir" onclick="reagir(this)">👎 Não curtir (<span>0</span>)</button>
+            <button class="btn-curtir" onclick="reagir(this)">👍 Like (<span>0</span>)</button>
+            <button class="btn-descurtir" onclick="reagir(this)">👎 Deslike (<span>0</span>)</button>
         </li>
         <li>
-            <b>Amor à primeira vista (Imprinting):</b> Assim que os filhotes saem do ovo, eles gravam na memória a primeira coisa que veem se movendo e passam a seguir aquilo achando que é a mãe deles.
+            <b>Amor à primeira vista (Imprinting):</b> Assim que os filhotes saem do ovo, eles gravam na memória a primeira coisa que veem se movendo and passam a seguir aquilo achando que é a mãe deles. 
             <br>
-            <button class="btn-curtir" onclick="reagir(this)">👍 Curtir (<span>0</span>)</button>
-            <button class="btn-descurtir" onclick="reagir(this)">👎 Não curtir (<span>0</span>)</button>
+            <button class="btn-curtir" onclick="reagir(this)">👍 Like (<span>0</span>)</button>
+            <button class="btn-descurtir" onclick="reagir(this)">👎 Deslike (<span>0</span>)</button>
         </li>
     </ul>
 
     <div class="caixa-final">
         <h3>Fim do post</h3>
-        <p>Os gansos são demais! Como eu sou só uma estudante fã deles, se quiser saber mais coisas científicas, vale a pena pesquisar no Google ou falar com um biólogo.</p>
+        <p>Os gansos são animais incríveis! Como eu sou apenas uma fã dessas aves maravilhosas, não há muitas informações realmente interessantes nesse blog. Se quiser saber mais coisas científicas, vale a pena pesquisar no Google ou falar com um biólogo e trazer essas informações para eu colocar aqui. Adeus!</p>
     </div>
 
     <script>
