@@ -5,12 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog gansos</title>
     <style>
+        /* Ajustes globais para melhorar a fonte e o fundo do site */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
         header { 
             background-color: rgb(109, 48, 26);
             color: #FFFF;
             max-width: 800px;
             margin: 0 auto;
-            border: 5px;
+            padding: 20px;
+            border-radius: 8px 8px 0 0; /* Bordas arredondadas no topo */
         }
         main { 
             background-color: #FFFF;
@@ -18,32 +27,78 @@
             text-align: center;
             max-width: 800px;
             margin: 0 auto;
+            padding: 20px;
+            border-radius: 0 0 8px 8px; /* Bordas arredondadas na base */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra leve para destacar o conteúdo */
+        }
+        /* Ajuste para a imagem não quebrar a tela */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        /* Estilo para organizar os subtítulos das curiosidades */
+        h3 {
+            color: rgb(109, 48, 26);
+            margin-top: 30px;
+        }
+        /* Estilo para o texto de encerramento */
+        .fundo-formulario {
+            background-color: #fdf6f0;
+            padding: 15px;
+            margin-top: 40px;
+            border-radius: 5px;
+            border-left: 5px solid rgb(109, 48, 26);
         }
     </style>
 </head>
 <body>
     <main>
         <header>
-            <h1> Blog sobre gansos (porque são legais) </h1>
+            <h1>Blog sobre gansos (porque são legais)</h1>
         </header>
 
         <img src="c_5.png" alt="Gansos com seus filhotes">
         <p>Olá, você gosta de gansos? Se sim, bom, saiba que você está no lugar certo! Aqui teremos informações muito interessantes sobre essas aves fascinantes e encantadoras.</p>
-        <p>Blog escrito por Luiza V.S</p>
+        <p><em>Blog escrito por Luiza V.S</em></p>
         
         <h2>Meu primeiro post</h2>
         
-        <h1>Primeira curiosidade:</h1>
+        <h3>Primeira curiosidade:</h3>
         <p>Gansos são animais estritamente monogâmicos e possuem um parceiro para toda a vida. Normalmente eles escolhem um parceiro quando jovens e ficam com eles até a eventual morte.</p>
 
-        <h1>Segunda curiosidade:</h1>
+        <h3>Segunda curiosidade:</h3>
         <p>Eles voam em um formato de "V" perfeito para economizar energia. O ganso da frente corta o vento, criando um fluxo de ar que facilita o voo de todos os outros que vêm atrás.</p>
 
-        <h1>Terceira curiosidade:</h1>
+        <h3>Terceira curiosidade:</h3>
         <p>Os gansos são excelentes animais de guarda. Eles têm uma audição muito aguçada, são territoriais e soltam gritos muito altos e estridentes sempre que um estranho se aproxima.</p>
 
-        <h1>Quarta curiosidade:</h1>
+        <h3>Quarta curiosidade:</h3>
         <p>Eles demonstram uma empatia impressionante. Se um ganso fica doente ou é baleado durante a migração, dois outros gansos saem da formação e descem com ele para protegê-lo até que melhore ou morra.</p>
+
+        <h3>Quinta curiosidade:</h3>
+        <p>Eles têm dentes falsos na língua! Embora as aves não tenham dentes de verdade, os gansos possuem estruturas serrilhadas feitas de cartilagem na língua e no bico chamadas "tomia", que os ajudam a cortar grama e arrancar raízes facilmente.</p>
+
+        <h3>Sexta curiosidade:</h3>
+        <p>Os gansos são parentes muito antigos. Registros fósseis indicam que os ancestrais dos gansos que conhecemos hoje já caminhavam e voavam pelo planeta Terra há mais de 10 milhões de anos.</p>
+
+        <h3>Sétima curiosidade:</h3>
+        <p>Eles conseguem dormir enquanto voam. Durante as longas viagens de migração, os gansos que estão nas posições traseiras do "V" conseguem tirar cochilos rápidos de segundos enquanto planam no fluxo de ar dos companheiros.</p>
+
+        <h3>Oitava curiosidade:</h3>
+        <p>Gansos produzem um óleo impermeável. Eles possuem uma glândula perto da cauda que secreta um óleo especial. Eles espalham esse óleo pelas penas com o bico, garantindo que a água nunca chegue à sua pele, mantendo-os aquecidos e secos.</p>
+
+        <h3>Nona curiosidade:</h3>
+        <p>A liderança no voo é compartilhada. O ganso que voa na frente (o que faz o maior esforço cortando o vento) cansa rápido. Quando isso acontece, ele vai para o final da fila e outro ganso assume a liderança imediatamente.</p>
+
+        <h3>Décima curiosidade:</h3>
+        <p>A memória deles é implacável. Os gansos conseguem se lembrar perfeitamente de rostos humanos e de outros animais que foram gentis ou que os ameaçaram, guardando essa lembrança por muitos anos.</p>
+
+        <section class="fundo-formulario">
+            <h3>E você, conhece mais algum segredo sobre eles?</h3>
+            <p>Os gansos são aves verdadeiramente intriguantes, misteriosas e cheias de surpresas! O que você achou dessas curiosidades? Se você conhece alguma outra história, comportamento ou fato curioso sobre esses animais incríveis, deixe nos comentários ou envie para nós. Vamos adorar descobrir mais sobre o fascinante mundo dos gansos com a sua ajuda!</p>
+        </section>
     </main>
 </body>
 </html>
